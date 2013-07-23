@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="cnc.content">
+
+  <include package="plone.behavior" file="meta.zcml" />
+
+  <plone:behavior
+      title="Name from Creation Date"
+      description="Generates short name based on creation date."
+      provides=".shortname.INameFromCreationDate"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      />
+  <adapter factory=".shortname.NameFromCreationDate" />
+
+</configure>
