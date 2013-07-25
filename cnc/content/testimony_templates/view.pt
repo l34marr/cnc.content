@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="cnc.content">
+<body>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+
+<h2 tal:condition="context/testimony">
+  <tal:field i18n:translate="">Testimony By:</tal:field>
+  <span tal:replace="context/testimony" />
+</h2>
+
+<span tal:condition="context/text">
+  <span tal:replace="structure context/text/output">Text</span>
+</span>
+
+<fieldset tal:condition="context/files">
+<legend>Attached Files</legend>
+  <ul>
+  <tal:files repeat="item context/files">
+    <li><a href=""
+         tal:attributes="href string:${context/absolute_url}/@@download/files/${item/filename};"
+         tal:content="item/filename">Attached File</a></li>
+  </tal:files>
+  </ul>
+</fieldset>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>

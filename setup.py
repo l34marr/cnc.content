@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='cnc.content',
       version=version,
@@ -28,7 +28,8 @@ setup(name='cnc.content',
           'setuptools',
           'plone.app.dexterity [grok, relations]',
           'plone.namedfile [blobs]',
-          # -*- Extra requirements: -*-
+          'plone.app.referenceablebehavior',
+          'plone.formwidget.multifile',
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -38,7 +39,7 @@ setup(name='cnc.content',
       # The next two lines may be deleted after you no longer need
       # addcontent support from paster and before you distribute
       # your package.
-      setup_requires=["PasteScript"],
-      paster_plugins = ["ZopeSkel"],
+      #setup_requires=["PasteScript"],
+      #paster_plugins = ["ZopeSkel"],
 
       )

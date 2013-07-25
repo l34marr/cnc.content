@@ -12,6 +12,7 @@
   <includeDependencies package="." />
 
   <!-- Include files and packages -->
+  <include file="permissions.zcml" />
   <include package=".behaviors" />
 
   <!-- Grok the package to initialise schema interfaces and content classes -->
