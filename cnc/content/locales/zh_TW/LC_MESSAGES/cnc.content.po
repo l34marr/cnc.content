@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cnc.content\n"
+"POT-Creation-Date: 2013-08-01 03:06+0000\n"
+"PO-Revision-Date: 2013-08-01 11:07+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: zh-tw\n"
+"Language-Name: Traditional Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: cnc.content\n"
+
+#: ./testimony.py:45
+msgid "Attached Files"
+msgstr ""
+
+#: ./testimony.py:39
+msgid "Body Text"
+msgstr ""
+
+#: ./profiles/default/types/cnc.Testimony.xml
+msgid "ChiNan Church Testimony Type"
+msgstr ""
+
+#: ./profiles/default/types/cnc.Testimony.xml
+#: ./testimony.py:34
+msgid "Testimony"
+msgstr ""
+
+#: ./testimony_templates/view.pt:14
+msgid "Testimony By:"
+msgstr ""
+
+#: ./testimony.py:30
+msgid "Title"
+msgstr ""
+
