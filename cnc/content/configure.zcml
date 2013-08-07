@@ -30,9 +30,9 @@
        in Plone -->
   <genericsetup:registerProfile
       name="default"
-      title="ChiNan Dexterity Content"
+      title="ChiNan Church Content"
       directory="profiles/default"
-      description="Extension profile for ChiNan Dexterity Content"
+      description="Extension profile for ChiNan Church Content"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
