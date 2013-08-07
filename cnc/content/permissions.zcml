@@ -8,5 +8,9 @@
       id="cnc.AddTestimony"
       title="CNC: Add Testimony"
       />
+  <permission
+      id="cnc.AddQuote"
+      title="CNC: Add Quote"
+      />
 
 </configure>
