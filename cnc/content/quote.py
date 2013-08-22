@@ -70,3 +70,10 @@ class View(grok.View):
     grok.require('zope2.View')
     grok.name('view')
 
+    def t_title(self, value):
+        if value in ('new', 'old'):
+            term = testaments.getTerm(value)
+            return term.title
+        else:
+            return None
+
