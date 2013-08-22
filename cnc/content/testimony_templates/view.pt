@@ -13,6 +13,10 @@
 <h2 tal:condition="context/testimony">
   <tal:field i18n:translate="">Testimony By:</tal:field>
   <span tal:replace="context/testimony" />
+  <tal:date condition="context/date">
+    &mdash;
+  <span tal:replace="context/date">date</span>
+  </tal:date>
 </h2>
 
 <span tal:condition="context/text">

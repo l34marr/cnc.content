@@ -35,6 +35,11 @@ class ITestimony(form.Schema):
         required=False,
     )
 
+    date = schema.TextLine(
+        title=_(u"Date"),
+        required=False,
+    )
+
     text = RichText(
         title=_(u"Body Text"),
         required=False,
