@@ -10,6 +10,9 @@
 <metal:main fill-slot="content-core">
   <metal:content-core define-macro="content-core">
 
+<a href="#"
+ tal:define="url python:'http://www.chi-nanchurch.tw/sendcard/sendcard/index.php?sen_id='+context.id"
+ tal:attributes="href url">寄送卡片</a>
 <div id="category" class="documentByLine"
  tal:define="t_title python:view.t_title(context.testament)"
  tal:condition="t_title">
