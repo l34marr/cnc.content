@@ -25,13 +25,18 @@
 
 <fieldset tal:condition="context/files">
 <legend>Attached Files</legend>
-  <ul>
+<ul>
   <tal:files repeat="item context/files">
-    <li><a href=""
-         tal:attributes="href string:${context/absolute_url}/@@download/files/${item/filename};"
-         tal:content="item/filename">Attached File</a></li>
+  <li class="multi-file-file">
+  <img src="" alt=""
+   tal:condition="context/icon"
+   tal:attributes="src context/icon" />
+  <a href=""
+   tal:attributes="href string:${context/absolute_url}/@@edit/++widget++form.widgets.files/@@download/${repeat/item/index}"
+   tal:content="item/filename">Attached File</a>
+  </li>
   </tal:files>
-  </ul>
+</ul>
 </fieldset>
 
   </metal:content-core>
